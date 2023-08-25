@@ -5,12 +5,6 @@ import { ChakraProvider } from '@chakra-ui/react'
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
-
-export const metadata: Metadata = {
-  title: 'Iconify Stock',
-  description: 'Iconify Stock',
-}
-
 export default function RootLayout({
   children,
 }: {
@@ -18,6 +12,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <title>Iconify Stock</title>
+        <meta name='iconifystock' content='Graphic Stock Website' />
+      </head>
       <body>
       <ChakraProvider>
         <Navbar />
