@@ -1,4 +1,5 @@
-'use client';
+'use client'
+
 import type { Metadata } from 'next'
 import { ChakraProvider } from '@chakra-ui/react'
 import Navbar from '@/components/Navbar';
