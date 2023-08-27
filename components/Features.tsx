@@ -12,7 +12,7 @@ import {
   Icon,
   useColorModeValue,
 } from '@chakra-ui/react'
-import { IoAnalyticsSharp, IoLogoBitcoin, IoSearchSharp } from 'react-icons/io5'
+import { IoAnalyticsSharp, IoRefreshCircleOutline, IoWalletSharp } from 'react-icons/io5'
 import { ReactElement } from 'react'
 
 interface FeatureProps {
@@ -48,10 +48,9 @@ export default function Features() {
             rounded={'md'}>
             Our Story
           </Text>
-          <Heading>A digital Product design agency</Heading>
+          <Heading>💡 Unleash Creativity, IconifyStock fuels your creativity with graphics that impact. </Heading>
           <Text color={'gray.500'} fontSize={'lg'}>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-            eirmod tempor invidunt ut labore
+          Download free vector graphics, art & parterns.
           </Text>
           <Stack
             spacing={4}
@@ -61,17 +60,17 @@ export default function Features() {
             <Feature
               icon={<Icon as={IoAnalyticsSharp} color={'yellow.500'} w={5} h={5} />}
               iconBg={useColorModeValue('yellow.100', 'yellow.900')}
-              text={'Business Planning'}
+              text={'Millions of FREE resources'}
             />
             <Feature
-              icon={<Icon as={IoLogoBitcoin} color={'green.500'} w={5} h={5} />}
+              icon={<Icon as={IoRefreshCircleOutline} color={'green.500'} w={5} h={5} />}
               iconBg={useColorModeValue('green.100', 'green.900')}
-              text={'Financial Planning'}
+              text={'Fresh content'}
             />
             <Feature
-              icon={<Icon as={IoSearchSharp} color={'purple.500'} w={5} h={5} />}
+              icon={<Icon as={IoWalletSharp} color={'purple.500'} w={5} h={5} />}
               iconBg={useColorModeValue('purple.100', 'purple.900')}
-              text={'Market Analysis'}
+              text={'Options for any budget'}
             />
           </Stack>
         </Stack>

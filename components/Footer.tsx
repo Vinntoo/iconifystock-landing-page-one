@@ -9,7 +9,7 @@ import {
   useColorModeValue,
   VisuallyHidden,
 } from '@chakra-ui/react'
-import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
+import { FaInstagram, FaTwitter, FaFacebook } from 'react-icons/fa'
 import { ReactNode } from 'react'
 
 const Logo = (props: any) => {
@@ -72,13 +72,13 @@ export default function Footer() {
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}>
         <Logo />
-        <Text>© 2022 Chakra Templates. All rights reserved</Text>
+        <Text>© 2023 Iconify Beyond Limited. All rights reserved</Text>
         <Stack direction={'row'} spacing={6}>
           <SocialButton label={'Twitter'} href={'#'}>
             <FaTwitter />
           </SocialButton>
-          <SocialButton label={'YouTube'} href={'#'}>
-            <FaYoutube />
+          <SocialButton label={'Facebook'} href={'#'}>
+            <FaFacebook />
           </SocialButton>
           <SocialButton label={'Instagram'} href={'#'}>
             <FaInstagram />

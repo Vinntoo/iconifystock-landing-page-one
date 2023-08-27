@@ -53,8 +53,9 @@ export default function Navbar() {
           <Text
             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
             fontFamily={'heading'}
-            color={useColorModeValue('gray.800', 'white')}>
-           <Button as={"a"} href='/' variant={"link"}> Logo</Button>
+            color={useColorModeValue('gray.800', 'white')} 
+            >
+            IconifyStock
           </Text>
 
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
@@ -67,21 +68,21 @@ export default function Navbar() {
           justify={'flex-end'}
           direction={'row'}
           spacing={6}>
-          <Button as={'a'} fontSize={'sm'} fontWeight={400} variant={'link'} href='/signin'>
+          {/* <Button as={'a'} fontSize={'sm'} fontWeight={400} variant={'link'} href={'/signin'}>
             Sign In
-          </Button>
+          </Button> */}
           <Button
             as={'a'}
             display={{ base: 'none', md: 'inline-flex' }}
             fontSize={'sm'}
             fontWeight={600}
             color={'white'}
-            bg={'pink.400'}
-            href='signup'
+            bg={'blue.400'}
+            href={''}
             _hover={{
               bg: 'pink.300',
             }}>
-            Sign Up
+            Download Free Iconset
           </Button>
         </Stack>
       </Flex>
@@ -242,42 +243,42 @@ interface NavItem {
 }
 
 const NAV_ITEMS: Array<NavItem> = [
-  {
-    label: 'Inspiration',
-    children: [
-      {
-        label: 'Explore Design Work',
-        subLabel: 'Trending Design to inspire you',
-        href: '#',
-      },
-      {
-        label: 'New & Noteworthy',
-        subLabel: 'Up-and-coming Designers',
-        href: '#',
-      },
-    ],
-  },
-  {
-    label: 'Find Work',
-    children: [
-      {
-        label: 'Job Board',
-        subLabel: 'Find your dream design job',
-        href: '#',
-      },
-      {
-        label: 'Freelance Projects',
-        subLabel: 'An exclusive list for contract work',
-        href: '#',
-      },
-    ],
-  },
-  {
-    label: 'Learn Design',
-    href: '#',
-  },
-  {
-    label: 'Hire Designers',
-    href: '#',
-  },
+  // {
+  //   label: 'Inspiration',
+  //   children: [
+  //     {
+  //       label: 'Explore Design Work',
+  //       subLabel: 'Trending Design to inspire you',
+  //       href: '#',
+  //     },
+  //     {
+  //       label: 'New & Noteworthy',
+  //       subLabel: 'Up-and-coming Designers',
+  //       href: '#',
+  //     },
+  //   ],
+  // },
+  // {
+  //   label: 'Find Work',
+  //   children: [
+  //     {
+  //       label: 'Job Board',
+  //       subLabel: 'Find your dream design job',
+  //       href: '#',
+  //     },
+  //     {
+  //       label: 'Freelance Projects',
+  //       subLabel: 'An exclusive list for contract work',
+  //       href: '#',
+  //     },
+  //   ],
+  // },
+  // {
+  //   label: 'Learn Design',
+  //   href: '#',
+  // },
+  // {
+  //   label: 'Hire Designers',
+  //   href: '#',
+  // },
 ]
