@@ -15,7 +15,7 @@ export default function RootLayout({
       <head>
         <title>IconifyStock</title>
         <meta name='iconifystock' content='Graphic Stock Website' />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
       </head>
       <body>
       <ChakraProvider>
